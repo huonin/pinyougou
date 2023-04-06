@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'Linearicons-Free';
+	src:url('../fonts/Linearicons-Free.eot?w118d');
+	src:url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+		url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+		url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+		url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+		url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 .w {
     width: 1200px;
     margin: 0 auto;
@@ -11,7 +22,7 @@
     float: right;
 }
 
-.style_red {
+.style-red {
     color: red;
 }
 
@@ -37,12 +48,107 @@
 }
 
 .arrow_icon::after {
-    content: '⇣';
+    content: '\e874';
+    font-family: 'Linearicons-Free';
     margin-left: 6px;
 }
 
 /* header 头部制作 */
 .header {
+    position: relative;
     height: 105px;
-    background-color: pink;
+    background-color:white;
 }
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+    /* background-color: skyblue; */
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../image/logo.png) no-repeat;
+    font-size: 0px;
+
+}
+
+.header .search {
+    position: absolute;
+    top: 25px;
+    left: 350px;
+    width: 540px;
+    height: 35px;
+    margin: 0 auto;
+    vertical-align: middle;
+    background-color: #666;
+}
+
+.header .search input {
+    float: left;
+    width: 455px;
+    height: 35px;
+    border: 2px solid #b1191a;
+    border-right: 0;
+    padding-left: 10px;
+
+}
+
+.header .search button {
+    width: 85px;
+    height: 35px;
+    background-color: #b1191a;
+    color: #f1f1f1;
+}
+
+.header .search-bot ul {
+    position: absolute;
+    top: 63px;
+    left: 360px;
+}
+
+.header .search-bot ul li {
+    float: left;
+    margin-right: 20px;
+}
+.header .shop{
+    position: absolute;
+    width: 145px;
+    height: 35px;
+    line-height: 33px;
+    top: 25px;
+    right: 65px;
+    border: 1px solid #666;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.shop::before{
+    content: '\e82e';
+    font-family: 'Linearicons-Free';
+    color: #c81623;
+    font-size: large;
+    margin-right: 5px;
+} 
+.header .shop .count{
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    width: 15px;
+    height: 15px;
+    line-height: 14px;
+    background-color: #c81623;
+    color: white;
+    border-radius: 7px 7px 7px 0;
+}
+.shop::after{
+    position: absolute;
+   
+    content: '\e876';
+    font-family: 'Linearicons-Free';
+    margin-left: 5px;
+} 

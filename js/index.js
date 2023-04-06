@@ -1,1 +1,1 @@
-alert("Ahonen的个人网站正在搭建中。嘿嘿")
+// alert("Ahonen的个人网站正在搭建中。嘿嘿")
