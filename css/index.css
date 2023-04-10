@@ -1,5 +1,97 @@
-.main {
-    height: 465px;
-    margin-left: 215px;
+@font-face {
+    font-family: 'Linearicons-Free';
+    src: url('../fonts/Linearicons-Free.eot?w118d');
+    src: url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+        url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+        url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+        url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+        url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.w .main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
     background-color: pink;
 } 
+.w .main .focus{
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: aqua;
+    overflow: hidden;
+}
+.w .main .focus .ul1{
+    position: relative;
+    left: 0%;
+    width: 400%;
+    /* margin-left: -100%; */
+}
+.w .main .focus .ul1 li{
+    float: left;
+}
+.w .main .Newsflash{
+    float: right;
+    width: 250px;
+    height: 100%;
+    background-color: blue;
+}
+.w .main .Newsflash ul li{
+    float: left;
+}
+ .arrow_l{
+    font-family:'Linearicons-Free';
+    color: black;
+    font-size: 45px;
+    position: absolute;
+    left: 0;
+    top: 210px;
+    width: 40px;
+    height: 65px;
+    line-height:65px ;
+    background-color: rgb(7, 7, 7,.1);
+    border-radius:0 20px 20px 0 ;
+    z-index: 1;
+}
+ .arrow_r{
+    position: absolute;
+    font-family:'Linearicons-Free';
+    color: black;
+    font-size: 45px;
+    right: 0;
+    top: 210px;
+    width: 40px;
+    height: 65px;
+    line-height:65px ;
+    background-color: rgb(7, 7, 7,.1);
+    border-radius:20px 0px 0px 20px ;
+    z-index: 1;
+}
+.arrow_l:hover{
+    color: red;
+}
+.arrow_r:hover{
+    color: red;
+}
+.w .main .focus .ul2{
+    position: absolute;
+    width: 215px;
+    height: 30px;
+    bottom: 0;
+    left: 265px;
+    padding: 5px 10px;
+    z-index: 2;
+}
+.w .main .focus .ul2 li a{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 15px;
+    border-radius: 7px 7px 7px 7px;
+    
+    z-index: 3;
+}
