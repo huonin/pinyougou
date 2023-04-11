@@ -26,6 +26,9 @@
 .style-red {
     color: red;
 }
+.w .main .focus .ul2 .red{
+    background-color: red;
+}
 
 /* 快捷导航栏模块 */
 .shortcut {
