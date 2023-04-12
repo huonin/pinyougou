@@ -9,14 +9,16 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .w .main {
     width: 980px;
     height: 455px;
     margin-left: 220px;
     margin-top: 10px;
-    background-color: pink;
-} 
-.w .main .focus{
+
+}
+
+.w .main .focus {
     position: relative;
     float: left;
     width: 721px;
@@ -24,26 +26,20 @@
     background-color: aqua;
     overflow: hidden;
 }
-.w .main .focus .ul1{
+
+.w .main .focus .ul1 {
     position: relative;
-    left: 0%;
+    left: -100%;
     width: 10000%;
     /* margin-left: -100%; */
 }
-.w .main .focus .ul1 li{
+
+.w .main .focus .ul1 li {
     float: left;
 }
-.w .main .Newsflash{
-    float: right;
-    width: 250px;
-    height: 100%;
-    background-color: blue;
-}
-.w .main .Newsflash ul li{
-    float: left;
-}
- .arrow_l{
-    font-family:'Linearicons-Free';
+
+.arrow_l {
+    font-family: 'Linearicons-Free';
     color: black;
     font-size: 45px;
     position: absolute;
@@ -51,32 +47,36 @@
     top: 210px;
     width: 40px;
     height: 65px;
-    line-height:65px ;
-    background-color: rgb(7, 7, 7,.1);
-    border-radius:0 20px 20px 0 ;
+    line-height: 65px;
+    background-color: rgb(7, 7, 7, .1);
+    border-radius: 0 20px 20px 0;
     z-index: 1;
 }
- .arrow_r{
+
+.arrow_r {
     position: absolute;
-    font-family:'Linearicons-Free';
+    font-family: 'Linearicons-Free';
     color: black;
     font-size: 45px;
     right: 0;
     top: 210px;
     width: 40px;
     height: 65px;
-    line-height:65px ;
-    background-color: rgb(7, 7, 7,.1);
-    border-radius:20px 0px 0px 20px ;
+    line-height: 65px;
+    background-color: rgb(7, 7, 7, .1);
+    border-radius: 20px 0px 0px 20px;
     z-index: 1;
 }
-.arrow_l:hover{
+
+.arrow_l:hover {
     color: red;
 }
-.arrow_r:hover{
+
+.arrow_r:hover {
     color: red;
 }
-.w .main .focus .ul2{
+
+.w .main .focus .ul2 {
     position: absolute;
     width: 215px;
     height: 30px;
@@ -85,6 +85,7 @@
     padding: 5px 10px;
     z-index: 2;
 }
+
 .w .main .focus .ul2 li {
     float: left;
     width: 15px;
@@ -94,4 +95,96 @@
     border-radius: 7px 7px 7px 7px;
     cursor: pointer;
     z-index: 3;
+}
+
+.w .main .Newsflash {
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.w .main .Newsflash .news {
+    width: 100%;
+    height: 163px;
+    padding: 0 20px;
+    border: 1px solid rgb(3, 3, 3, .1);
+}
+
+.w .main .Newsflash .news div {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dotted rgb(3, 3, 3, .1);
+}
+
+.w .main .Newsflash .news div p {
+    float: left;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.w .main .Newsflash .news div a {
+    float: right;
+}
+
+.w .main .Newsflash .news ul li {
+    float: left;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.w .main .Newsflash .news ul li i {
+    color: rgb(0, 0, 0, .8);
+    font-weight: 500;
+}
+
+.w .main .Newsflash .news ul li :hover i {
+    color: red;
+}
+
+.w .main .Newsflash .lifeservice li{
+    position: relative;
+}
+
+.w .main .Newsflash .lifeservice li {
+    position: relative;
+    width: 63px;
+    height: 70px;
+    text-align: center;
+    /* text-decoration: dashed; */
+    float: left;
+    left: 1px;
+    padding-top: 45px;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: 1px solid rgb(3, 3, 3, .1);
+}
+
+.main .Newsflash .lifeservice li::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 16px;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    background-color: aqua;
+    background: url(../image/icons.png) no-repeat;
+    background-position: -16px -15px;
+}
+.w .main .Newsflash .lifeservice ul li:nth-child(2)::before{
+    background-position: -16px -87px;
+} 
+.w .main .Newsflash .bargain{
+    position: absolute;
+    bottom: 0;
+}
+.w .main .Newsflash .bargain img{
+    border: 0;
+    vertical-align: middle;
 }
