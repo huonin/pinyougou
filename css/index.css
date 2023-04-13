@@ -188,3 +188,36 @@
     border: 0;
     vertical-align: middle;
 }
+.recom{
+    margin-top: 10px;
+    height: 163px;
+}
+.recom_hd{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 163px;
+    padding-top: 36px;
+    padding-left: 50px;
+    background-color: rgb(176, 51, 164);
+}
+.recom_bd ul li{
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 145px;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); */
+}
+.recom_bd ul li::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 145px;
+    top:9px;
+    background-color: rgb(77, 77, 76,.5);
+    z-index: 3;
+}
+.recom_bd ul li:hover{
+    box-shadow: 0 30px 40px 0 rgba(0,0,0,.6);
+}

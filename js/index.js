@@ -90,9 +90,9 @@ addEventListener("load", function () {
     }, 2500);
     //后退
     // 克隆第五张图片
-    const fifth = li1[3].cloneNode(true);
-    console.log(fifth);
-    ul.prepend(fifth);
+    // const fifth = li1[3].cloneNode(true);
+    // console.log(fifth);
+    // ul.prepend(fifth);
     btnLift.addEventListener('click', function () {
         if (num == 0) {
             ul.style.left = -3*focusWidth;
