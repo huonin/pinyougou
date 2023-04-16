@@ -29,7 +29,7 @@
 
 .w .main .focus .ul1 {
     position: relative;
-    left: -100%;
+    left: -0%;
     width: 10000%;
     /* margin-left: -100%; */
 }

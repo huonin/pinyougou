@@ -56,12 +56,13 @@ addEventListener("load", function () {
     
     var focusWidth = focus.style.width = 721;
     console.log(focusWidth);
-    var num = 1;
+    var num = 0;
+    console.log(ul.children.length);
     function btn() {
-        if (num == ul.children.length-2) {
-            ul.style.left = '-721px';
+        if (num == ul.children.length-1) {
+            ul.style.left = 0;
             console.log(8);
-            num = 1;
+            num = 0;
         }
         num++;
         const bigLeft = -num * focusWidth;
@@ -97,10 +98,10 @@ addEventListener("load", function () {
         if (num == 0) {
             ul.style.left = -3*focusWidth;
             console.log(8);
-            num = 3;
+            num = 4;
         }
-        num++;
-        const smallLeft = num * focusWidth;
+        num--;
+        const smallLeft = -num * focusWidth;
         animate(ul, smallLeft);
         //圆点移动
         for (let i = li2.length; i > 0; i--) {
