@@ -343,17 +343,29 @@
     cursor: pointer;
 }
 
-.content-block .floor_bd {
+.content-block .floor_bd .tab_list_item{
     position: relative;
     float: left;
     height: 360px;
+   
 }
-
+.content-block .floor_bd{
+    position: relative;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+.content-block .floor_bd .tab_content{
+    position: absolute;
+    width: 500%;
+    left: 0;
+}
 
 
 .content-block .floor_bd .tab_list_item div {
     float: left;
     height: 360px;
+    text-align: center;
 }
 
 .content-block .floor_bd .tab_list_item div:nth-child(1) ul li {
@@ -371,33 +383,57 @@
     /* height: 100%; */
 }
 
-.content-block .floor_bd .tab_list_item div:nth-child(1) {
+.content-block .floor_bd .tab_list_item>div:nth-child(1) {
     width: 210px;
-    background-color: #f9f9f9;
 }
 
-.content-block .floor_bd .tab_list_item div:nth-child(2) {
+.content-block .floor_bd .tab_list_item>div:nth-child(2) {
     width: 330px;
 }
 
-.content-block .floor_bd .tab_list_item div:nth-child(3) {
+.content-block .floor_bd .tab_list_item>div:nth-child(3) {
     width: 220px;
 }
 
-.content-block .floor_bd .tab_list_item div:nth-child(3) a:nth-child(1) img {
+.content-block .floor_bd .tab_list_item>div:nth-child(3) a:nth-child(1) img {
     border-bottom: 1px solid #bbb;
 }
 
-.content-block .floor_bd .tab_list_item div:nth-child(5) a:nth-child(1) img {
+.content-block .floor_bd .tab_list_item>div:nth-child(5) a:nth-child(1) img {
     border-bottom: 1px solid #bbb;
 }
 
-.content-block .floor_bd .tab_list_item div:nth-child(4) {
+.content-block .floor_bd .tab_list_item>div:nth-child(4) {
     width: 220px;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
 
-.content-block .floor_bd .tab_list_item div:nth-child(5) {
+.content-block .floor_bd .tab_list_item>div:nth-child(5) {
     width: 218px;
+}
+.fix {
+    position: fixed;
+    left: 180px;
+    top: 250px;
+
+}
+.fix ul li{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #ede8e8;
+    border-bottom: 1px solid #666;
+}
+.fix .red {
+    background-color: #c81623;
+}
+.fix .white{
+    color: white;
+}
+.fix ul li:hover{
+    color: #c81623;
+    cursor: pointer;
 }

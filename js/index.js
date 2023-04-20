@@ -122,6 +122,29 @@ addEventListener("load", function () {
 
     }
 
+    const tab_list =document.querySelectorAll('.tab_list ul li');
+    const tab_content = document.querySelectorAll('.tab_content');
+    for (let index = 0; index < tab_list.length; index++) {
+        tab_list[index].addEventListener('click',function(){
+            console.log(1);
+            animate(tab_content,-1200)
+        })
+        
+    }
+    
+    // 固定栏改变效果
+    const fix = document.querySelectorAll('.fix li')
+    for (let i = 0; i < fix.length; i++) {
+        fix[i].addEventListener('click',function(){
+            for (let index = 0; index < fix.length; index++) {
+                fix[index].className = '';
+                fix[index].children[0].className = '';
+            }
+            this.className = 'red';
+            this.children[0].className = 'white';
+        })
+        
+    }
 
 })
 

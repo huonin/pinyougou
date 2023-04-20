@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人注册</title>
+    <!-- 引入icon图标 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入我们列表页的css文件 -->
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div class="header w">
+       <a href="./index.html"> <img src="./image/logo.png" alt="logo"></a>
+    </div>
+    <div class="registerarea w">
+        <div class="re_hd">
+            <h1>注册新用户</h1>
+            <div>我有账号，去<a href="./index.html" class="style-red"> 登录</a></div>
+        </div>
+        <div class="re_form">
+            <form action="login.html" name="register_form" id="register_form">
+                <ul>
+                    <li><label for="tel">手机号：</label>
+                        <input type="text" class="inp" id="tel" name="tel">
+                        <span class="tel_hint style-red"><i class="error_icon"> </i> 请输入11位手机号码</span>
+                    </li>
+                    <li><label for="code">短信验证码：</label>
+                        <input type="text" class="inp" id="code" name="code">
+                        <span class="tel_hint success"><i class="success_icon"></i> 短信验证码输入正确</span>
+                    </li>
+                    <li><label for="pwd">登录密码：</label>
+                        <input type="password" class="inp" id="pwd" name="pwd">
+                        <span class="tel_hint style-red"><i class="error_icon"></i> 请设置6至20位字母、数字和符号组合</span>
+                    </li>
+                    <li class="safe">安全程度<em>弱</em><em>中</em><em>强</em> </li>
+                    <li><label for="confirm">确认密码：</label>
+                        <input type="password" class="inp" id="confirm" name="confirm">
+                        <span class="tel_hint style-red"><i class="error_icon"></i> 密码不一致，请重新输入</span>
+                    </li>
+                    <li class="agree">
+                        <input type="checkbox" class="check"> 同意协议并注册 <a href="javascript:;">《知晓用户协议》</a>
+                        <span class="tel_hint style-red"><i class="error_icon"></i> 请勾选用户协议</span>
+                    </li>
+                    <li>
+                        <input type="button" class="btn" value="完成注册">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="w">
+            <div class="mod-copyright">
+                <ul>
+                    <li>
+                        <p><a href="#">关于我们</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">联系我们</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">联系客服</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">商家入驻</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">营销中心</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">手机优享购</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">友情链接</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">销售联盟</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">优享购社区</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">优享购公益</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">English Site</a></p>
+                    </li>
+                    <li></li>
+                    <li>
+                        <p><a href="#">Contact U</a></p>
+                    </li>
+                </ul>
+                <p>
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn
+                    <br>
+                    京ICP备08001421号京公网安备110108007702
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
