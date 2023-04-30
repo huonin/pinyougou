@@ -53,13 +53,13 @@ addEventListener("load", function () {
 
     }
     //前进
-    
+
     var focusWidth = focus.style.width = 721;
     console.log(focusWidth);
     var num = 0;
     console.log(ul.children.length);
     function btn() {
-        if (num == ul.children.length-1) {
+        if (num == ul.children.length - 1) {
             ul.style.left = 0;
             console.log(8);
             num = 0;
@@ -96,7 +96,7 @@ addEventListener("load", function () {
     // ul.prepend(fifth);
     btnLift.addEventListener('click', function () {
         if (num == 0) {
-            ul.style.left = -3*focusWidth;
+            ul.style.left = -3 * focusWidth;
             console.log(8);
             num = 4;
         }
@@ -122,29 +122,91 @@ addEventListener("load", function () {
 
     }
 
-    const tab_list =document.querySelectorAll('.tab_list ul li');
+    const tab_list = document.querySelectorAll('.tab_list ul li');
     const tab_content = document.querySelectorAll('.tab_content');
     for (let index = 0; index < tab_list.length; index++) {
-        tab_list[index].addEventListener('click',function(){
+        tab_list[index].addEventListener('click', function () {
             console.log(1);
-            animate(tab_content,-1200)
+            animate(tab_content, -1200)
         })
-        
+
     }
-    
+
     // 固定栏改变效果
-    const fix = document.querySelectorAll('.fix li')
+    var flag = true;
+    let fix = document.querySelectorAll('.fix li')
     for (let i = 0; i < fix.length; i++) {
-        fix[i].addEventListener('click',function(){
+        fix[i].addEventListener('click', function () {
+            flag = false;
             for (let index = 0; index < fix.length; index++) {
                 fix[index].className = '';
                 fix[index].children[0].className = '';
             }
             this.className = 'red';
             this.children[0].className = 'white';
+            setTimeout(function(){
+                flag = true;
+            },800)
         })
-        
     }
+
+    // 
+    $(window).scroll(function () {
+        // var flag = true;
+        fixMove();
+        if (flag) {
+            if ($(document).scrollTop() >= recomTop & $(document).scrollTop() < houseTop) {
+                console.log('c');
+                $('.fix li').removeClass('red').children().removeClass('white');
+                $('.fix li').eq(0).addClass('red').children().addClass('white');
+            } else if ($(document).scrollTop() >= houseTop & $(document).scrollTop() < mobileTop) {
+                console.log('c');
+                $('.fix li').removeClass('red').children().removeClass('white');
+                $('.fix li').eq(1).addClass('red').children().addClass('white');
+            } else if ($(document).scrollTop() >= mobileTop & $(document).scrollTop() < clothesTop) {
+                console.log('c');
+                $('.fix li').removeClass('red').children().removeClass('white');
+                $('.fix li').eq(2).addClass('red').children().addClass('white');
+            } else if ($(document).scrollTop() >= clothesTop & $(document).scrollTop() < computerTop) {
+                console.log('c');
+                $('.fix li').removeClass('red').children().removeClass('white');
+                $('.fix li').eq(3).addClass('red').children().addClass('white');
+            } else if ($(document).scrollTop() >= computerTop & $(document).scrollTop() < medicineTop) {
+                console.log('c');
+                $('.fix li').removeClass('red').children().removeClass('white');
+                $('.fix li').eq(4).addClass('red').children().addClass('white');
+            }
+        }
+        
+        // console.log($(document).scrollTop());
+    })
+    // 返回顶部
+    $('.fix li').eq(0).click(function () {
+        console.log('n');
+        $(document).scrollTop(0)
+    })
+    // 导航的显示和隐藏
+    let recomTop = $('.recom').offset().top;
+    // console.log($('.recom').offset().top);
+    let houseTop = $('#house').offset().top;
+    let mobileTop = $('#mobile').offset().top;
+    let clothesTop = $('#clothes').offset().top;
+    let computerTop = $('#computer').offset().top;
+    let medicineTop = $('#medicine').offset().top;
+    // 导航的显示和隐藏函数
+    function fixMove() {
+        if ($(document).scrollTop() >= recomTop) {
+            $('.fix').fadeIn();
+            // console.log(99);
+        } else {
+            $('.fix').fadeOut();
+        }
+        // 颜色随位置改变
+
+    }
+
+
+    fixMove();
 
 })
 

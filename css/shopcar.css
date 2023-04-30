@@ -109,7 +109,7 @@ text-align: center;
 }
 .number input{
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     text-align: center;
 }
 .long{
@@ -144,4 +144,7 @@ font-size: 18px;
 }
 .total-amount{
     font-size: 16px;
+}
+.check_bgc{
+    background-color: rgb(236, 190, 198,.5);
 }

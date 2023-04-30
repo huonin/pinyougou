@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入jquery文件 -->
+    <script src="./js/jquery.mini.js"></script>
     <script src="./js/animate.js"></script>
     <script src="./js/index.js"></script>
-
+    <!-- responsivelyLazy -->
+<link rel="stylesheet" href="./css/responsivelyLazy.min.css">
+<script src="./js/responsivelyLazy.min.js"></script>
 </head>
 
 <body>
@@ -579,6 +583,7 @@
         </ul>
         <div class="fix">
             <ul>
+                <li><a href="javascript:;">返回顶部</a></li>
                 <li class="red"> <a class="white" href="#house">家用电器</a></li>
                 <li> <a href="#mobile">手机通讯</a></li>
                 <li> <a href="#clothes">服饰搭配</a></li>
@@ -725,7 +730,29 @@
         </div>
     </footer>
     <!--  底部的模块制作 end -->
-
+    <script src="http://www.htmleaf.com/templets/default/js/htmleaf-demo.min.js"></script>
+	<script type="text/javascript">
+		IS_IPAD=navigator.userAgent.match(/iPad/i)!=null;
+		var t={desktop:"100%",tabletlandscape:1040,tabletportrait:788,mobilelandscape:480,mobileportrait:340,placebo:0};
+		jQuery(".responsive a").on("click",function(){
+		var e=jQuery(this);
+		for(device in t){
+			if(e.hasClass(device)){
+				clicked=device;
+				jQuery("#iframe").width(t[device]);
+				if(clicked==device){
+					jQuery(".responsive a").removeClass("active");
+					e.addClass("active")}}}
+		return false});
+		if(IS_IPAD){
+			$("#iframe").css("padding-bottom","60px")
+		}
+	</script>
+	<script type="text/javascript">
+		$(".htmleaf-container--side").mCustomScrollbar({
+			theme:"minimal"
+		});
+	</script>
 </body>
 
 </html>

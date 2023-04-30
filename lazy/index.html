@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,minimal-ui" />
+	<title>可实现响应式图片懒加载的js插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/responsivelylazy.min.css">
+	<style type="text/css">
+		.example-image{
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 5px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            border-radius: 2px;
+        }
+	</style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>可实现响应式图片懒加载的js插件 <span>A Lazy load responsive images javascript plugin</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Image-Effects/201508222455.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>
+		<div class="htmleaf-content">
+			<p>在下面这个DEMO中，有4个不同尺寸的DIV元素。当屏幕上的DIV中的图片变为可见的时候，插件会选择最佳尺寸的图片来显示。例子中可用的的图片尺寸有：400px，600px，800px，1000px，1500px，2000px和2500px。</p>
+			<div class="example-title">max-width: 500px</div>
+	        <div class="example-image" style="max-width:500px;">
+	            <div class="responsively-lazy" style="padding-bottom:68.44%;">
+	                <img alt="reponsivelyLazy demo image" src="images/2500.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	                data-srcset="images/600.jpg 600w, images/400.jpg 400w, images/800.jpg 800w, images/1500.jpg 1500w, images/1000.jpg 1000w, images/2000.jpg 2000w"
+	                />
+	            </div>
+	        </div>
+	        <div class="example-title">max-width: 900px</div>
+	        <div class="example-image" style="max-width:900px;">
+	            <div class="responsively-lazy" style="padding-bottom:68.44%;">
+	                <img alt="reponsivelyLazy demo image" src="images/2500.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	                data-srcset="images/600.jpg 600w, images/400.jpg 400w, images/800.jpg 800w, images/1500.jpg 1500w, images/1000.jpg 1000w, images/2000.jpg 2000w"
+	                />
+	            </div>
+	        </div>
+	        <div class="example-title">width: 100%</div>
+	        <div class="example-image">
+	            <div class="responsively-lazy" style="padding-bottom:68.44%;">
+	                <img alt="reponsivelyLazy demo image" src="images/2500.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	                data-srcset="images/600.jpg 600w, images/400.jpg 400w, images/800.jpg 800w, images/1500.jpg 1500w, images/1000.jpg 1000w, images/2000.jpg 2000w"
+	                />
+	            </div>
+	        </div>
+	        <div class="example-title">width: 800px</div>
+	        <div class="example-image" style="width:800px;">
+	            <div class="responsively-lazy" style="padding-bottom:68.44%;">
+	                <img alt="reponsivelyLazy demo image" src="images/2500.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	                data-srcset="images/600.jpg 600w, images/400.jpg 400w, images/800.jpg 800w, images/1500.jpg 1500w, images/1000.jpg 1000w, images/2000.jpg 2000w"
+	                />
+	            </div>
+	        </div>
+		</div>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Image-Effects/201505071793.html">
+			  <img src="related/1.jpg" width="300" alt="jQuery超实用图片放大预览特效插件"/>
+			  <h3>jQuery超实用图片放大预览特效插件</h3>
+			</a>
+			<a href="http://www.htmleaf.com/jQuery/Image-Effects/201501211243.html">
+			  <img src="related/2.jpg" width="300" alt="jQuery响应式按比例生成图片缩略图插件"/>
+			  <h3>jQuery响应式按比例生成图片缩略图插件</h3>
+			</a>
+		</div>
+	</div>
+	
+	<script async src="js/responsivelylazy.min.js"></script>
+</body>
+</html>

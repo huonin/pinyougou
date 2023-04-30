@@ -15,10 +15,10 @@ $(function () {
         $('.all-checked').prop('checked', $(this).prop('checked'));
         getSum();
         if ($(this).prop("checked")) {
-            $('.j-checked,.all-checked').addClass('check_bgc');
+            $('.shops-content').addClass('check_bgc');
             console.log('a');
         } else {
-            $('.j-checked,.all-checked').removeClass('check_bgc');
+            $('.shops-content').removeClass('check_bgc');
         }
     })
     //(2).单选商品件数导致全选按钮
@@ -150,12 +150,7 @@ $(function () {
     })
     //(2) 删除选择的商品
     $('.delChoose').click(function () {
-        $('.shops-content').each(function (i, dom) {
-            let checked = $(this).find('.con-1 input').prop('checked');
-            if (checked) {
-                $(this).remove();
-            }
-        })
+        $('.j-checked:checked').parents('.shops-content').remove();
         getSum();
     })
 })
